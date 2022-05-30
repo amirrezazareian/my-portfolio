@@ -9,7 +9,7 @@ import "./index.scss";
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
-  const nameArray = "amirReza".split("");
+  const nameArray = ` "amirReza Zareian" `.split("");
   const jobArray = "Web Developer".split("");
   const interestArray = "UI & UX Designer".split("");
   // const enthusiastArray = "Enthusiast".split("");
@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 4000);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -65,7 +65,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        {/* <Logo /> */}
       </div>
 
       <Loader type="pacman" />

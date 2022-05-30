@@ -1,24 +1,24 @@
-import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
-import codechefLogo from '../../assets/images/codechef.png'
-import LogoSubtitle from '../../assets/images/Sudip_logo_white.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import "./index.scss";
+import LogoS from "../../assets/images/logo-s.png";
+import codechefLogo from "../../assets/images/codechef.png";
+import LogoSubtitle from "../../assets/images/Sudip_logo_white.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
   faUser,
   faEnvelope,
   faScrewdriverWrench,
-} from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+} from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <>
       <div className="nav-bar">
         <Link className="logo" to="/">
-          <img src={LogoS} alt="Logo" />
-          <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+          {/* <img src={LogoS} alt="Logo" /> */}
+          {/* <img className="sub-logo" src={LogoSubtitle} alt="slobodan" /> */}
         </Link>
         <nav>
           <NavLink exact="true" activeclassname="active" to="/">
@@ -75,7 +75,7 @@ const Sidebar = () => {
         </ul>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
